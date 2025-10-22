@@ -1,2 +1,2 @@
 # communityNewsOnPHP
-This is a website where community can create a stupid or funny news and admin check's it
+To run this website you need to download and import the .sql file to your database

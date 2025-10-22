@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Inter";
+}
+body {
+    background-image: url("./images/background2.png");
+    background-size: cover;
+    background-repeat: no-repeat;    
+    background-attachment: fixed;
+}
+main {
+        border-radius: 10px;
+        text-align: center;
+        padding: 20px;
+        color: white;
+        background-color: rgb(36, 36, 36);
+        margin: 0 auto;
+        margin-top: 200px;
+        width: 800px;
+        height: 600px;
+
+}
+#div_conteiner {
+    overflow-y: auto;
+    margin-top: 80px;
+    margin-left: 100px;
+    border: 1px solid black;
+    width: 600px;
+    height: 400px;
+}
+// .drop_button {
+//     background-color: red;
+//     border: none;
+//     cursor: pointer;
+//     position: absolute;
+//     margin-top: 8px;
+
+//     width: 20px;
+// }

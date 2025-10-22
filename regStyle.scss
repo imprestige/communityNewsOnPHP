@@ -1,0 +1,144 @@
+*{
+     padding: 0px;
+     margin: 0px;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+body{
+    background-image: url("./images/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;    
+    background-attachment: fixed;
+    &::before{
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        z-index: -1;
+        pointer-events: none;
+    }
+}
+
+main{
+     text-align: center;
+     border-radius: 10px;
+     height: 400px;
+     width: 20%;
+     margin: 0 auto;
+    background-color: rgb(36, 36, 36);
+    color: white;
+
+}
+.rejestracja, .login{
+     text-align: right;
+     margin-right: 110px;
+}
+input[type='text']{
+    background-color: rgb(36, 36, 36);
+    border: 0px;
+    border-bottom: 2px solid black;
+    padding: 5px;
+    transition: 0.3s;
+    color: rgb(255, 255, 255);
+}
+input[type='text']:focus{
+    transition: 0.3s;
+    border-bottom: 2px solid rgb(168, 95, 0);
+    outline: none;
+}
+input[type='email']{
+    background-color: rgb(36, 36, 36);
+    border: 0px;
+    border-bottom: 2px solid black;
+    padding: 5px;
+    transition: 0.3s;
+    color: rgb(255, 255, 255);
+}
+input[type='email']:focus{
+    border-bottom: 2px solid black;
+    outline: none;
+    transition: 0.3s;
+    border-bottom: 2px solid rgb(168, 95, 0);
+}
+input[type='password']{
+    background-color: rgb(36, 36, 36);
+    border: 0px;
+    border-bottom: 2px solid black;
+    padding: 5px;
+    transition: 0.3s;
+    color: rgb(255, 255, 255);
+
+}
+input[type='password']:focus{
+    border-bottom: 2px solid black;
+    outline: none;
+    transition: 0.3s;
+    border-bottom: 2px solid rgb(168, 95, 0);
+}
+label{
+     position: absolute;
+     margin-left: -155px;
+     transition: 0.2s ease;
+     pointer-events: none;
+}
+
+input[type='email']:focus + label[for="email"],
+input[type='email']:not(:placeholder-shown) + label[for="email"] {
+    font-size: 80%;
+    margin-top: -10px;
+    transition: 0.2s;
+}
+
+input[type='text']:focus + label[for="nick"],
+input[type='text']:valid + label[for="nick"]{
+     transition: 0.2s;
+     font-size: 80%;
+     margin-top: -10px;
+}
+input[type='password']:focus + label[for="haslo"],
+input[type='password']:valid + label[for="haslo"]{
+     transition: 0.2s;
+     font-size: 80%;
+     margin-top: -10px;
+}
+input[type="submit"]{
+
+    color: rgb(255, 255, 255);
+    border: 0px;
+    transition: 0.5s;
+    border-radius: 5px;
+    height: 40px;
+    width: 100px;
+    background-color: rgba(255, 255, 255, 0.164);
+    font-size: 4mm;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+input[type="submit"]:hover{
+    background-color: rgba(255, 255, 255, 0.37);
+    transition: 0.5s;
+}
+input[type="reset"]{
+
+    color: red;
+    border: 0px;
+    transition: 0.5s;
+    border-radius: 5px;
+    height: 40px;
+    width: 100px;
+    background-color: rgba(255, 0, 0, 0.13);
+    font-size: 4mm;
+    font-weight: 600;
+}
+input[type="reset"]:hover{
+    background-color: rgba(255, 0, 0, 0.212);
+    transition: 0.5s;
+}
+.offer{
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 3mm;
+}
